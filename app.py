@@ -101,7 +101,7 @@ with st.sidebar:
     strategy = st.selectbox("候选采集策略", list(STRATEGIES))
     rounds = st.slider("重复验证轮次", 1, 5, 3)
     max_cost = st.slider("允许的资源成本级", 1, 6, 5)
-    st.caption(f"Scrapling 环境状态：{'已安装' if SCRAPLING_AVAILABLE else '未安装'}；本项目不连接外部网站。")
+    st.caption("仿真环境：使用预设运行信号模拟采集任务，支持合规检查、策略比较及评审报告导出。")
 
 st.subheader("合规前置检查")
 c1, c2, c3, c4 = st.columns(4)
